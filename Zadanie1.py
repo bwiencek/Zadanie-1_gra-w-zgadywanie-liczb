@@ -11,6 +11,19 @@ def enter_number():
 
     return result
 
+def computer_number():
+    draw_number = random.randint(1, 100)
+    user_number = enter_number()
+
+    while user_number != draw_number:
+        if draw_number < user_number:
+            print("Too big!")
+
+        elif draw_number > user_number:
+            print("Too small!")
+
+        else:
+            print("You win!")
 
 
 
