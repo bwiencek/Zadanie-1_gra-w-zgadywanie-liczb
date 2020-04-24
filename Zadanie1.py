@@ -25,11 +25,5 @@ def computer_number():
         else:
             print("You win!")
 
-
-
-
-
-
-
-
-
+if __name__ == '__main__':
+    guess_the_number()
