@@ -1,6 +1,7 @@
-#belowe python function will collect number from the User and forward it as a integer.
+#below python program will collect number from the User and will draw a number by the computer and display a message if the user number is too small, too large or the same as the computer's..
 import random
 
+#function that will collect number from the User and forward it as a integer
 def enter_number():
     while True:
         try:
@@ -11,6 +12,7 @@ def enter_number():
 
     return result
 
+#function that will compare user's and computer's numbers and will display a massage.
 def computer_number():
     draw_number = random.randint(1, 100)
     user_number = enter_number()
@@ -25,5 +27,6 @@ def computer_number():
         else:
             print("You win!")
 
+#(poniższego nie rozumiem - do wyjaśnienia z Wykładowcą/Mentorem).
 if __name__ == '__main__':
     guess_the_number()
